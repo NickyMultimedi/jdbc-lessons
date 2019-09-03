@@ -3,6 +3,7 @@ package be.multimedi.jdbc;
 import be.multimedi.jdbc.wrappers.DriverManagerWrapper;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
