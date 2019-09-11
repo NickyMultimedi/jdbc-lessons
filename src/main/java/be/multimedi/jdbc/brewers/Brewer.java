@@ -1,6 +1,10 @@
 package be.multimedi.jdbc.brewers;
 
+import be.multimedi.jdbc.beers.Beer;
+
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Brewer implements Serializable {
@@ -10,6 +14,7 @@ public class Brewer implements Serializable {
     private String zipCode;
     private String city;
     private int turnover;
+    private List<Beer> beers = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -57,6 +62,14 @@ public class Brewer implements Serializable {
 
     public void setTurnover(int turnover) {
         this.turnover = turnover;
+    }
+
+    public List<Beer> getBeers() {
+        return beers;
+    }
+
+    public void setBeers(List<Beer> beers) {
+        this.beers = beers;
     }
 
     @Override
